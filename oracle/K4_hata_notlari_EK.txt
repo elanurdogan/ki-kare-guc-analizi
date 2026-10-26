@@ -1,2 +1,3 @@
 2026-10-26
 Sonradan eklenen not: Protokoldeki [32] numaralı kayıt, yanlış mod/alan ile yapılmış bir denemedir (Post hoc, w=0, Total sample size=0.95). Ekran görüntüsü alınmadı, vektör setine dahil değildir. Gözlem, K4-039 ve sonrasında bilinçli olarak test edildi.
+2026-10-26 Sonradan eklenen not: K4_hata_notları.txt dosyasında K4-031, K4-033 ve K4-034 satırlarının sonundaki ". hesaplamadı." ifadesi ek tur sırasında (2026-10-26) kullanıcı tarafından eklendi; G*Power'ın mesajının parçası değildir.

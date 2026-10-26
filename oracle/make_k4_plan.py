@@ -120,6 +120,7 @@ RECAPTURE = {
     "K4-033": "diyalog w alanını örtüyor (K4-034'ten ayırt edilemiyor)",
     "K4-034": "diyalog w alanını örtüyor (K4-033'ten ayırt edilemiyor)",
 }
+RECAPTURE_DONE = "2026-10-26 21:32–21:35 arasında"
 BASE = {A: {"w": "0.3", "alpha": "0.05", "power": "0.80", "df": "1"},
         P: {"w": "0.3", "alpha": "0.05", "n_total": "100", "df": "1"}}
 
@@ -154,16 +155,17 @@ for key, title in SECTIONS:
             md.append(f"| {r['id']} | {MODE_LABEL[r['mode']]} | {inputs(r)} | {EXPECTED.get((key, r['mode']), '—')} | ☐ |")
     md.append("")
 md += [
-    "## Yeniden çekilecekler",
+    "## Yeniden çekilecekler — ✅ tamamlandı",
     "",
-    "Hata diyaloğunu girdi alanlarını örtmeyecek bir yere sürükleyip ekran görüntüsünü yeniden al; dosyayı aynı adla `oracle/screenshots/<id>.png` üzerine kaydet.",
+    f"Ek turda {RECAPTURE_DONE} yeniden çekildi; diyalog kenara kaydırıldı, girdi alanları okunuyor. "
+    "Yeni görüntüler `oracle/screenshots/<id>.png`, ilk çekimler `<id>_ilk.png` adıyla duruyor.",
     "",
-    "| id | Mod | Girilecek değerler | Neden | ☐ |",
+    "| id | Mod | Girilecek değerler | Neden | ☑ |",
     "|---|---|---|---|---|",
 ]
 for r in rows:
     if r["id"] in RECAPTURE:
-        md.append(f"| {r['id']} | {MODE_LABEL[r['mode']]} | {inputs(r)} | {RECAPTURE[r['id']]} | ☐ |")
+        md.append(f"| {r['id']} | {MODE_LABEL[r['mode']]} | {inputs(r)} | {RECAPTURE[r['id']]} | ☑ |")
 md.append("")
 with open(os.path.join(out, "K4_GIRIS_LISTESI.md"), "w", encoding="utf-8", newline="\n") as f:
     f.write("\n".join(md))

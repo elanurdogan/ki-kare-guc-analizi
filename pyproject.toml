@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ki-kare-guc-analizi"
+version = "0.0.0"
+description = "χ² olumsallık tablosu güç analizinin temiz oda yeniden yazımı (YZM301 eğitim projesi)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["scipy"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+gpower-clone = "chi2_power.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

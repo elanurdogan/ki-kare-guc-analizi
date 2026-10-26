@@ -1,0 +1,16 @@
+# İkili dosyalar (G*Power ve benzeri asla repoya girmez)
+*.exe
+*.dll
+
+# Ghidra proje dosyaları
+*.gpr
+*.rep/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+build/
+dist/
+*.egg-info/

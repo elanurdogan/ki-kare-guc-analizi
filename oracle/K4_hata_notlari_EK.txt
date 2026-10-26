@@ -1,0 +1,2 @@
+2026-10-26
+Sonradan eklenen not: Protokoldeki [32] numaralı kayıt, yanlış mod/alan ile yapılmış bir denemedir (Post hoc, w=0, Total sample size=0.95). Ekran görüntüsü alınmadı, vektör setine dahil değildir. Gözlem, K4-039 ve sonrasında bilinçli olarak test edildi.

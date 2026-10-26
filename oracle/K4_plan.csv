@@ -37,3 +37,8 @@ K4-035,a-priori,0.3,0.05,0.95,,0,gecersiz,"df=0: alan reddediyor mu, mesaj ne?"
 K4-036,a-priori,0.3,0.05,0.95,,2.5,gecersiz,"df ondalık: yuvarlıyor mu, reddediyor mu?"
 K4-037,a-priori,0.3,0.05,1,,5,gecersiz,"power=1: alan reddediyor mu, mesaj ne?"
 K4-038,post-hoc,0.3,0,,100,5,gecersiz,"alpha=0: alan reddediyor mu, mesaj ne?"
+K4-039,post-hoc,0,0.05,,100,1,gecersiz-mod-tutarliligi,"w=0 post-hoc'ta: a-priori'de reddediliyordu, post-hoc ne yapıyor?"
+K4-040,post-hoc,0.3,0.05,,1,1,gecersiz-mod-tutarliligi,n_total=1: sözleşmedeki ≥2 sınırının altında
+K4-041,post-hoc,0.3,0.05,,50.5,1,gecersiz-mod-tutarliligi,"n_total ondalık: yuvarlıyor mu, reddediyor mu?"
+K4-042,post-hoc,-0.3,0.05,,100,1,gecersiz-mod-tutarliligi,w negatif post-hoc'ta: a-priori ile aynı mesaj mı?
+K4-043,post-hoc,0.3,0.05,,50.2,1,gecersiz-mod-tutarliligi,plan dışı ek; N=50.5'te görülen yuvarlamanın kuralını ayırt etmek

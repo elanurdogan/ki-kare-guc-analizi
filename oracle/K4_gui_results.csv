@@ -1,39 +1,44 @@
-id,mode,w,alpha,power,n_total,df,kategori,amac,g_ncp,g_critical_chi2,g_n_total,g_actual_power,g_power,g_tepki,screenshot
-K4-001,a-priori,0.3,0.05,0.95,,5,kalibrasyon,CONTRACT.md Bölüm 9 chi2-contingency/a-priori; elle girişin doğruluğunu kanıtlar,,,,,,,
-K4-002,post-hoc,0.3,0.05,,100,5,kalibrasyon,CONTRACT.md Bölüm 9 chi2-contingency/post-hoc; elle girişin doğruluğunu kanıtlar,,,,,,,
-K4-003,a-priori,0.1,0.05,0.80,,1,tipik-a-priori,"küçük etki, df=1, klasik α/güç",,,,,,,
-K4-004,a-priori,0.3,0.05,0.80,,1,tipik-a-priori,"orta etki, df=1, klasik α/güç (sınır satırlarının a-priori tabanı)",,,,,,,
-K4-005,a-priori,0.5,0.05,0.80,,1,tipik-a-priori,"büyük etki, df=1, klasik α/güç",,,,,,,
-K4-006,a-priori,0.3,0.01,0.90,,2,tipik-a-priori,"orta etki, sıkı α, df=2",,,,,,,
-K4-007,a-priori,0.1,0.05,0.95,,3,tipik-a-priori,"küçük etki, yüksek güç, df=3 (büyük N)",,,,,,,
-K4-008,a-priori,0.5,0.10,0.90,,4,tipik-a-priori,"büyük etki, gevşek α, df=4 (küçük N; yuvarlama)",,,,,,,
-K4-009,a-priori,0.3,0.10,0.80,,6,tipik-a-priori,"orta etki, gevşek α, df=6",,,,,,,
-K4-010,a-priori,0.1,0.01,0.80,,10,tipik-a-priori,"küçük etki, sıkı α, df=10 (çok büyük N)",,,,,,,
-K4-011,a-priori,0.5,0.01,0.95,,10,tipik-a-priori,"büyük etki, sıkı α, yüksek güç, df=10",,,,,,,
-K4-012,a-priori,0.3,0.05,0.90,,3,tipik-a-priori,"orta etki, df=3, güç 0.90",,,,,,,
-K4-013,post-hoc,0.3,0.05,,88,1,tipik-post-hoc,"orta etki, df=1 a-priori satırıyla aynı ayar; güç ≈0.80 olmalı; N, Cohen tablolarındaki yaklaşık değerden seçildi",,,,,,,
-K4-014,post-hoc,0.5,0.05,,32,1,tipik-post-hoc,"büyük etki, df=1 a-priori satırıyla aynı ayar; güç ≈0.80 olmalı; N, Cohen tablolarındaki yaklaşık değerden seçildi",,,,,,,
-K4-015,post-hoc,0.1,0.05,,785,1,tipik-post-hoc,"küçük etki, df=1 a-priori satırıyla aynı ayar; güç ≈0.80 olmalı; N, Cohen tablolarındaki yaklaşık değerden seçildi",,,,,,,
-K4-016,post-hoc,0.1,0.01,,1000,10,tipik-post-hoc,"küçük etki, sıkı α, df=10, üst N sınırı",,,,,,,
-K4-017,post-hoc,0.5,0.10,,20,4,tipik-post-hoc,"büyük etki, gevşek α, alt N sınırı",,,,,,,
-K4-018,post-hoc,0.3,0.01,,150,2,tipik-post-hoc,"orta etki, sıkı α, df=2",,,,,,,
-K4-019,post-hoc,0.5,0.05,,50,6,tipik-post-hoc,"büyük etki, df=6",,,,,,,
-K4-020,post-hoc,0.3,0.10,,300,3,tipik-post-hoc,"orta etki, gevşek α, df=3",,,,,,,
-K4-021,a-priori,0.01,0.05,0.80,,1,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca w=0.01 (çok küçük; çok büyük N, taşma/üst sınır var mı?)",,,,,,,
-K4-022,post-hoc,0.02,0.05,,100,1,sinir,"taban post-hoc (w=0.3, α=0.05, n_total=100, df=1); yalnızca w=0.02 (çok küçük; güç α'ya çok yakın)",,,,,,,
-K4-023,a-priori,1.0,0.05,0.80,,1,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca w=1.0 (büyük; çok küçük N)",,,,,,,
-K4-024,a-priori,2.0,0.05,0.80,,1,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca w=2.0 (çok büyük; N alt sınıra dayanır mı?)",,,,,,,
-K4-025,a-priori,5.0,0.05,0.80,,1,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca w=5.0 (aşırı büyük; alan kabul ediyor mu?)",,,,,,,
-K4-026,a-priori,0.3,0.05,0.80,,50,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca df=50 (büyük)",,,,,,,
-K4-027,post-hoc,0.3,0.05,,100,100,sinir,"taban post-hoc (w=0.3, α=0.05, n_total=100, df=1); yalnızca df=100 (çok büyük)",,,,,,,
-K4-028,a-priori,0.3,0.05,0.99,,1,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca power=0.99",,,,,,,
-K4-029,a-priori,0.3,0.001,0.80,,1,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca α=0.001 (çok küçük)",,,,,,,
-K4-030,a-priori,0.3,0.05,0.05,,1,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca power=0.05 = α (çözüm var mı, N kaç?)",,,,,,,
-K4-031,a-priori,0.3,0.05,0.03,,1,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca power=0.03 < α (hata mı, sonuç mu?)",,,,,,,
-K4-032,post-hoc,0.3,0.05,,2,1,sinir,"taban post-hoc (w=0.3, α=0.05, n_total=100, df=1); yalnızca n_total=2 (sözleşmedeki alt sınır)",,,,,,,
-K4-033,a-priori,0,0.05,0.95,,5,gecersiz,"w=0: alan reddediyor mu, mesaj ne?",,,,,,,
-K4-034,a-priori,-0.3,0.05,0.95,,5,gecersiz,"w negatif: alan reddediyor mu, mesaj ne?",,,,,,,
-K4-035,a-priori,0.3,0.05,0.95,,0,gecersiz,"df=0: alan reddediyor mu, mesaj ne?",,,,,,,
-K4-036,a-priori,0.3,0.05,0.95,,2.5,gecersiz,"df ondalık: yuvarlıyor mu, reddediyor mu?",,,,,,,
-K4-037,a-priori,0.3,0.05,1,,5,gecersiz,"power=1: alan reddediyor mu, mesaj ne?",,,,,,,
-K4-038,post-hoc,0.3,0,,100,5,gecersiz,"alpha=0: alan reddediyor mu, mesaj ne?",,,,,,,
+id,mode,w,alpha,power,n_total,df,kategori,amac,g_ncp,g_critical_chi2,g_n_total,g_actual_power,g_power,n_kullanilan,g_tepki,screenshot
+K4-001,a-priori,0.3,0.05,0.95,,5,kalibrasyon,CONTRACT.md Bölüm 9 chi2-contingency/a-priori; elle girişin doğruluğunu kanıtlar,19.8000000,11.0704977,220,0.9502155,,,ok,K4-001.png
+K4-002,post-hoc,0.3,0.05,,100,5,kalibrasyon,CONTRACT.md Bölüm 9 chi2-contingency/post-hoc; elle girişin doğruluğunu kanıtlar,9.0000000,11.0704977,,,0.6235846,,ok,K4-002.png
+K4-003,a-priori,0.1,0.05,0.80,,1,tipik-a-priori,"küçük etki, df=1, klasik α/güç",7.8500000,3.8414588,785,0.8000569,,,ok,K4-003.png
+K4-004,a-priori,0.3,0.05,0.80,,1,tipik-a-priori,"orta etki, df=1, klasik α/güç (sınır satırlarının a-priori tabanı)",7.9200000,3.8414588,88,0.8035275,,,ok,K4-004.png
+K4-005,a-priori,0.5,0.05,0.80,,1,tipik-a-priori,"büyük etki, df=1, klasik α/güç",8.0000000,3.8414588,32,0.8074304,,,ok,K4-005.png
+K4-006,a-priori,0.3,0.01,0.90,,2,tipik-a-priori,"orta etki, sıkı α, df=2",17.4600000,9.2103404,194,0.9006853,,,ok,K4-006.png
+K4-007,a-priori,0.1,0.05,0.95,,3,tipik-a-priori,"küçük etki, yüksek güç, df=3 (büyük N)",17.1700000,7.8147279,1717,0.9500012,,,ok,K4-007.png
+K4-008,a-priori,0.5,0.10,0.90,,4,tipik-a-priori,"büyük etki, gevşek α, df=4 (küçük N; yuvarlama)",13.0000000,7.7794403,52,0.9026314,,,ok,K4-008.png
+K4-009,a-priori,0.3,0.10,0.80,,6,tipik-a-priori,"orta etki, gevşek α, df=6",11.1600000,10.6446407,124,0.8011571,,,ok,K4-009.png
+K4-010,a-priori,0.1,0.01,0.80,,10,tipik-a-priori,"küçük etki, sıkı α, df=10 (çok büyük N)",22.1800000,23.2092512,2218,0.8000922,,,ok,K4-010.png
+K4-011,a-priori,0.5,0.01,0.95,,10,tipik-a-priori,"büyük etki, sıkı α, yüksek güç, df=10",31.5000000,23.2092512,126,0.9520208,,,ok,K4-011.png
+K4-012,a-priori,0.3,0.05,0.90,,3,tipik-a-priori,"orta etki, df=3, güç 0.90",14.2200000,7.8147279,158,0.9010751,,,ok,K4-012.png
+K4-013,post-hoc,0.3,0.05,,88,1,tipik-post-hoc,"orta etki, df=1 a-priori satırıyla aynı ayar; güç ≈0.80 olmalı; N, Cohen tablolarındaki yaklaşık değerden seçildi",7.9200000,3.8414588,,,0.8035275,,ok,K4-013.png
+K4-014,post-hoc,0.5,0.05,,32,1,tipik-post-hoc,"büyük etki, df=1 a-priori satırıyla aynı ayar; güç ≈0.80 olmalı; N, Cohen tablolarındaki yaklaşık değerden seçildi",8.0000000,3.8414588,,,0.8074304,,ok,K4-014.png
+K4-015,post-hoc,0.1,0.05,,785,1,tipik-post-hoc,"küçük etki, df=1 a-priori satırıyla aynı ayar; güç ≈0.80 olmalı; N, Cohen tablolarındaki yaklaşık değerden seçildi",7.8500000,3.8414588,,,0.8000569,,ok,K4-015.png
+K4-016,post-hoc,0.1,0.01,,1000,10,tipik-post-hoc,"küçük etki, sıkı α, df=10, üst N sınırı",10.0000000,23.2092512,,,0.3055578,,ok,K4-016.png
+K4-017,post-hoc,0.5,0.10,,20,4,tipik-post-hoc,"büyük etki, gevşek α, alt N sınırı",5.0000000,7.7794403,,,0.5241841,,ok,K4-017.png
+K4-018,post-hoc,0.3,0.01,,150,2,tipik-post-hoc,"orta etki, sıkı α, df=2",13.5000000,9.2103404,,,0.7856135,,ok,K4-018.png
+K4-019,post-hoc,0.5,0.05,,50,6,tipik-post-hoc,"büyük etki, df=6",12.5000000,12.5915872,,,0.7584630,,ok,K4-019.png
+K4-020,post-hoc,0.3,0.10,,300,3,tipik-post-hoc,"orta etki, gevşek α, df=3",27.0000000,6.2513886,,,0.9985178,,ok,K4-020.png
+K4-021,a-priori,0.01,0.05,0.80,,1,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca w=0.01 (çok küçük; çok büyük N, taşma/üst sınır var mı?)",7.8489000,3.8414588,78489,0.8000020,,,ok,K4-021.png
+K4-022,post-hoc,0.02,0.05,,100,1,sinir,"taban post-hoc (w=0.3, α=0.05, n_total=100, df=1); yalnızca w=0.02 (çok küçük; güç α'ya çok yakın)",0.0400000,3.8414588,,,0.0545947,,ok,K4-022.png
+K4-023,a-priori,1.0,0.05,0.80,,1,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca w=1.0 (büyük; çok küçük N)",8.0000000,3.8414588,8,0.8074304,,,ok,K4-023.png
+K4-024,a-priori,2.0,0.05,0.80,,1,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca w=2.0 (çok büyük; N alt sınıra dayanır mı?)",8.0000000,3.8414588,2,0.8074304,,,ok,K4-024.png
+K4-025,a-priori,5.0,0.05,0.80,,1,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca w=5.0 (aşırı büyük; alan kabul ediyor mu?)",25.0000000,3.8414588,1,0.9988173,,,ok,K4-025.png
+K4-026,a-priori,0.3,0.05,0.80,,50,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca df=50 (büyük)",30.2400000,67.5048065,336,0.8006734,,,ok,K4-026.png
+K4-027,post-hoc,0.3,0.05,,100,100,sinir,"taban post-hoc (w=0.3, α=0.05, n_total=100, df=1); yalnızca df=100 (çok büyük)",9.0000000,124.3421,,,0.1582365,,ok,K4-027.png
+K4-028,a-priori,0.3,0.05,0.99,,1,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca power=0.99",18.4500000,3.8414588,205,0.9902383,,,ok,K4-028.png
+K4-029,a-priori,0.3,0.001,0.80,,1,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca α=0.001 (çok küçük)",17.1000000,10.8275662,190,0.8008574,,,ok,K4-029.png
+K4-030,a-priori,0.3,0.05,0.05,,1,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca power=0.05 = α (çözüm var mı, N kaç?)",0.0900000,3.8414588,1,0.0603726,,,ok,K4-030.png
+K4-031,a-priori,0.3,0.05,0.03,,1,sinir,"taban a-priori (w=0.3, α=0.05, power=0.80, df=1); yalnızca power=0.03 < α (hata mı, sonuç mu?)",,,,,,,Power must be greater than or equal to alpha.,K4-031.png
+K4-032,post-hoc,0.3,0.05,,2,1,sinir,"taban post-hoc (w=0.3, α=0.05, n_total=100, df=1); yalnızca n_total=2 (sözleşmedeki alt sınır)",0.1800000,3.8414588,,,0.0708635,,ok,K4-032.png
+K4-033,a-priori,0,0.05,0.95,,5,gecersiz,"w=0: alan reddediyor mu, mesaj ne?",,,,,,,Effect size w must be greater 1e-06.,K4-033.png
+K4-034,a-priori,-0.3,0.05,0.95,,5,gecersiz,"w negatif: alan reddediyor mu, mesaj ne?",,,,,,,Effect size w must be greater 1e-06.,K4-034.png
+K4-035,a-priori,0.3,0.05,0.95,,0,gecersiz,"df=0: alan reddediyor mu, mesaj ne?",,,,,,,Degrees of Freedom must be greater or equal one.,K4-035.png
+K4-036,a-priori,0.3,0.05,0.95,,2.5,gecersiz,"df ondalık: yuvarlıyor mu, reddediyor mu?",16.3800000,6.9280761,182,0.9502356,,,ok (sözleşmeye göre geçersiz),K4-036.png
+K4-037,a-priori,0.3,0.05,1,,5,gecersiz,"power=1: alan reddediyor mu, mesaj ne?",,,,,,,"Power is outside the admissible range (1e-07, 1).",K4-037.png
+K4-038,post-hoc,0.3,0,,100,5,gecersiz,"alpha=0: alan reddediyor mu, mesaj ne?",,,,,,,"Alpha is outside the admissible range (1e-07, 1).",K4-038.png
+K4-039,post-hoc,0,0.05,,100,1,gecersiz-mod-tutarliligi,"w=0 post-hoc'ta: a-priori'de reddediliyordu, post-hoc ne yapıyor?",0,3.8414588,,,0.0500000,,ok (sözleşmeye göre geçersiz),K4-039.png
+K4-040,post-hoc,0.3,0.05,,1,1,gecersiz-mod-tutarliligi,n_total=1: sözleşmedeki ≥2 sınırının altında,0.0900000,3.8414588,,,0.0603726,,ok (sözleşmeye göre geçersiz),K4-040.png
+K4-041,post-hoc,0.3,0.05,,50.5,1,gecersiz-mod-tutarliligi,"n_total ondalık: yuvarlıyor mu, reddediyor mu?",4.5900000,3.8414588,,,0.5724114,51,ok (sözleşmeye göre geçersiz),K4-041.png
+K4-042,post-hoc,-0.3,0.05,,100,1,gecersiz-mod-tutarliligi,w negatif post-hoc'ta: a-priori ile aynı mesaj mı?,,,,,,,Effect size w must be non-negative.,K4-042.png
+K4-043,post-hoc,0.3,0.05,,50.2,1,gecersiz-mod-tutarliligi,plan dışı ek; N=50.5'te görülen yuvarlamanın kuralını ayırt etmek,4.5000000,3.8414588,,,0.5641160,50,ok (sözleşmeye göre geçersiz),K4-043.png

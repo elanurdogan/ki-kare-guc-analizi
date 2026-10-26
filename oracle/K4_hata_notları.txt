@@ -1,0 +1,12 @@
+K4-031: Input : power must be greater than or equal to alpha. hesaplamadı.
+K4-033: Input : Effect size w must be greater 1e-06. hesaplamadı.
+K4-034: Input : Effect size w must be greater 1e-06. hesaplamadı.
+K4-035: Input : Degrees of Freedom must be grester or equal one
+K4-036: Hata vermedi, hesapladı. Df alanında ve protokolde görünen değer: [2.5]. Total sample size = [182]
+K4-037: Input : Power is outside the admissible range (1e-07, 1)
+K4-038: Input : Alpha is outside the admissible range (1e-07, 1)
+K4-039: Hata vermedi, hesapladı. w alanı 0 olarak kaldı (değiştirilmedi). Protokolde girdiler girdiğim gibi. Power = [0.05]
+K4-040: Hata vermedi, hesapladı. Total sample size alanı 1 olarak kaldı. Protokolde girdiler girdiğim gibi. Power = [0.0603726]
+K4-041: Hata vermedi, hesapladı. Total sample size alanında 50.5 görünüyor, ama protokolde λ = 4.59 → hesapta N = 51 kullanılmış (0.09 × 51 = 4.59). G*Power ondalık N'yi sessizce yukarı yuvarladı. Power = [0.5724114]
+K4-042: Hata verdi. Input: Effect size w must be non-negative.
+K4-043 (plan dışı ek): Hata vermedi, hesapladı. Total sample size alanında ve protokol girdilerinde 50.2 görünüyor, ama protokolde λ = 4.5 → hesapta N = 50 kullanılmış (0.09 × 50 = 4.5). Power = [0.5641160]

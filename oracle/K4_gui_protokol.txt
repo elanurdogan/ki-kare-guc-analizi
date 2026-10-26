@@ -1,0 +1,382 @@
+[1] -- Monday, October 26, 2026 -- 20:21:35
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.3
+	α err prob	=	0.05
+	Power (1-β err prob)	=	0.95
+	Df	=	5
+Output:	Noncentrality parameter λ	=	19.8000000
+	Critical χ²	=	11.0704977
+	Total sample size	=	220
+	Actual power	=	0.9502155
+
+[2] -- Monday, October 26, 2026 -- 20:23:30
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	Post hoc: Compute achieved power 
+Input:	Effect size w	=	0.3
+	α err prob	=	0.05
+	Total sample size	=	100
+	Df	=	5
+Output:	Noncentrality parameter λ	=	9.0000000
+	Critical χ²	=	11.0704977
+	Power (1-β err prob)	=	0.6235846
+
+[3] -- Monday, October 26, 2026 -- 20:24:45
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.1
+	α err prob	=	0.05
+	Power (1-β err prob)	=	0.80
+	Df	=	1
+Output:	Noncentrality parameter λ	=	7.8500000
+	Critical χ²	=	3.8414588
+	Total sample size	=	785
+	Actual power	=	0.8000569
+
+[4] -- Monday, October 26, 2026 -- 20:25:49
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.3
+	α err prob	=	0.05
+	Power (1-β err prob)	=	0.80
+	Df	=	1
+Output:	Noncentrality parameter λ	=	7.9200000
+	Critical χ²	=	3.8414588
+	Total sample size	=	88
+	Actual power	=	0.8035275
+
+[5] -- Monday, October 26, 2026 -- 20:26:14
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.5
+	α err prob	=	0.05
+	Power (1-β err prob)	=	0.80
+	Df	=	1
+Output:	Noncentrality parameter λ	=	8.0000000
+	Critical χ²	=	3.8414588
+	Total sample size	=	32
+	Actual power	=	0.8074304
+
+[6] -- Monday, October 26, 2026 -- 20:26:45
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.3
+	α err prob	=	0.01
+	Power (1-β err prob)	=	0.90
+	Df	=	2
+Output:	Noncentrality parameter λ	=	17.4600000
+	Critical χ²	=	9.2103404
+	Total sample size	=	194
+	Actual power	=	0.9006853
+
+[7] -- Monday, October 26, 2026 -- 20:27:26
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.1
+	α err prob	=	0.05
+	Power (1-β err prob)	=	0.95
+	Df	=	3
+Output:	Noncentrality parameter λ	=	17.1700000
+	Critical χ²	=	7.8147279
+	Total sample size	=	1717
+	Actual power	=	0.9500012
+
+[8] -- Monday, October 26, 2026 -- 20:28:01
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.5
+	α err prob	=	0.10
+	Power (1-β err prob)	=	0.90
+	Df	=	4
+Output:	Noncentrality parameter λ	=	13.0000000
+	Critical χ²	=	7.7794403
+	Total sample size	=	52
+	Actual power	=	0.9026314
+
+[9] -- Monday, October 26, 2026 -- 20:28:41
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.3
+	α err prob	=	0.10
+	Power (1-β err prob)	=	0.80
+	Df	=	6
+Output:	Noncentrality parameter λ	=	11.1600000
+	Critical χ²	=	10.6446407
+	Total sample size	=	124
+	Actual power	=	0.8011571
+
+[10] -- Monday, October 26, 2026 -- 20:29:28
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.1
+	α err prob	=	0.01
+	Power (1-β err prob)	=	0.80
+	Df	=	10
+Output:	Noncentrality parameter λ	=	22.1800000
+	Critical χ²	=	23.2092512
+	Total sample size	=	2218
+	Actual power	=	0.8000922
+
+[11] -- Monday, October 26, 2026 -- 20:30:43
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.5
+	α err prob	=	0.01
+	Power (1-β err prob)	=	0.95
+	Df	=	10
+Output:	Noncentrality parameter λ	=	31.5000000
+	Critical χ²	=	23.2092512
+	Total sample size	=	126
+	Actual power	=	0.9520208
+
+[12] -- Monday, October 26, 2026 -- 20:31:16
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.3
+	α err prob	=	0.05
+	Power (1-β err prob)	=	0.90
+	Df	=	3
+Output:	Noncentrality parameter λ	=	14.2200000
+	Critical χ²	=	7.8147279
+	Total sample size	=	158
+	Actual power	=	0.9010751
+
+[13] -- Monday, October 26, 2026 -- 20:31:56
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	Post hoc: Compute achieved power 
+Input:	Effect size w	=	0.3
+	α err prob	=	0.05
+	Total sample size	=	88
+	Df	=	1
+Output:	Noncentrality parameter λ	=	7.9200000
+	Critical χ²	=	3.8414588
+	Power (1-β err prob)	=	0.8035275
+
+[14] -- Monday, October 26, 2026 -- 20:32:20
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	Post hoc: Compute achieved power 
+Input:	Effect size w	=	0.5
+	α err prob	=	0.05
+	Total sample size	=	32
+	Df	=	1
+Output:	Noncentrality parameter λ	=	8.0000000
+	Critical χ²	=	3.8414588
+	Power (1-β err prob)	=	0.8074304
+
+[15] -- Monday, October 26, 2026 -- 20:32:50
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	Post hoc: Compute achieved power 
+Input:	Effect size w	=	0.1
+	α err prob	=	0.05
+	Total sample size	=	785
+	Df	=	1
+Output:	Noncentrality parameter λ	=	7.8500000
+	Critical χ²	=	3.8414588
+	Power (1-β err prob)	=	0.8000569
+
+[16] -- Monday, October 26, 2026 -- 20:33:22
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	Post hoc: Compute achieved power 
+Input:	Effect size w	=	0.1
+	α err prob	=	0.01
+	Total sample size	=	1000
+	Df	=	10
+Output:	Noncentrality parameter λ	=	10.0000000
+	Critical χ²	=	23.2092512
+	Power (1-β err prob)	=	0.3055578
+
+[17] -- Monday, October 26, 2026 -- 20:33:56
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	Post hoc: Compute achieved power 
+Input:	Effect size w	=	0.5
+	α err prob	=	0.10
+	Total sample size	=	20
+	Df	=	4
+Output:	Noncentrality parameter λ	=	5.0000000
+	Critical χ²	=	7.7794403
+	Power (1-β err prob)	=	0.5241841
+
+[18] -- Monday, October 26, 2026 -- 20:34:31
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	Post hoc: Compute achieved power 
+Input:	Effect size w	=	0.3
+	α err prob	=	0.01
+	Total sample size	=	150
+	Df	=	2
+Output:	Noncentrality parameter λ	=	13.5000000
+	Critical χ²	=	9.2103404
+	Power (1-β err prob)	=	0.7856135
+
+[19] -- Monday, October 26, 2026 -- 20:35:02
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	Post hoc: Compute achieved power 
+Input:	Effect size w	=	0.5
+	α err prob	=	0.05
+	Total sample size	=	50
+	Df	=	6
+Output:	Noncentrality parameter λ	=	12.5000000
+	Critical χ²	=	12.5915872
+	Power (1-β err prob)	=	0.7584630
+
+[20] -- Monday, October 26, 2026 -- 20:35:36
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	Post hoc: Compute achieved power 
+Input:	Effect size w	=	0.3
+	α err prob	=	0.10
+	Total sample size	=	300
+	Df	=	3
+Output:	Noncentrality parameter λ	=	27.0000000
+	Critical χ²	=	6.2513886
+	Power (1-β err prob)	=	0.9985178
+
+[21] -- Monday, October 26, 2026 -- 20:41:35
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.01
+	α err prob	=	0.05
+	Power (1-β err prob)	=	0.80
+	Df	=	1
+Output:	Noncentrality parameter λ	=	7.8489000
+	Critical χ²	=	3.8414588
+	Total sample size	=	78489
+	Actual power	=	0.8000020
+
+[22] -- Monday, October 26, 2026 -- 20:43:14
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	Post hoc: Compute achieved power 
+Input:	Effect size w	=	0.02
+	α err prob	=	0.05
+	Total sample size	=	100
+	Df	=	1
+Output:	Noncentrality parameter λ	=	0.0400000
+	Critical χ²	=	3.8414588
+	Power (1-β err prob)	=	0.0545947
+
+[23] -- Monday, October 26, 2026 -- 20:43:49
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	1.0
+	α err prob	=	0.05
+	Power (1-β err prob)	=	0.80
+	Df	=	1
+Output:	Noncentrality parameter λ	=	8.0000000
+	Critical χ²	=	3.8414588
+	Total sample size	=	8
+	Actual power	=	0.8074304
+
+[24] -- Monday, October 26, 2026 -- 20:44:14
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	2.0
+	α err prob	=	0.05
+	Power (1-β err prob)	=	0.80
+	Df	=	1
+Output:	Noncentrality parameter λ	=	8.0000000
+	Critical χ²	=	3.8414588
+	Total sample size	=	2
+	Actual power	=	0.8074304
+
+[25] -- Monday, October 26, 2026 -- 20:44:39
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	5.0
+	α err prob	=	0.05
+	Power (1-β err prob)	=	0.80
+	Df	=	1
+Output:	Noncentrality parameter λ	=	25.0000000
+	Critical χ²	=	3.8414588
+	Total sample size	=	1
+	Actual power	=	0.9988173
+
+[26] -- Monday, October 26, 2026 -- 20:45:28
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.3
+	α err prob	=	0.05
+	Power (1-β err prob)	=	0.80
+	Df	=	50
+Output:	Noncentrality parameter λ	=	30.2400000
+	Critical χ²	=	67.5048065
+	Total sample size	=	336
+	Actual power	=	0.8006734
+
+[27] -- Monday, October 26, 2026 -- 20:45:52
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	Post hoc: Compute achieved power 
+Input:	Effect size w	=	0.3
+	α err prob	=	0.05
+	Total sample size	=	100
+	Df	=	100
+Output:	Noncentrality parameter λ	=	9.0000000
+	Critical χ²	=	124.3421
+	Power (1-β err prob)	=	0.1582365
+
+[28] -- Monday, October 26, 2026 -- 20:46:21
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.3
+	α err prob	=	0.05
+	Power (1-β err prob)	=	0.99
+	Df	=	1
+Output:	Noncentrality parameter λ	=	18.4500000
+	Critical χ²	=	3.8414588
+	Total sample size	=	205
+	Actual power	=	0.9902383
+
+[29] -- Monday, October 26, 2026 -- 20:46:52
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.3
+	α err prob	=	0.001
+	Power (1-β err prob)	=	0.80
+	Df	=	1
+Output:	Noncentrality parameter λ	=	17.1000000
+	Critical χ²	=	10.8275662
+	Total sample size	=	190
+	Actual power	=	0.8008574
+
+[30] -- Monday, October 26, 2026 -- 20:47:22
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.3
+	α err prob	=	0.05
+	Power (1-β err prob)	=	0.05
+	Df	=	1
+Output:	Noncentrality parameter λ	=	0.0900000
+	Critical χ²	=	3.8414588
+	Total sample size	=	1
+	Actual power	=	0.0603726
+
+[31] -- Monday, October 26, 2026 -- 20:52:35
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	Post hoc: Compute achieved power 
+Input:	Effect size w	=	0.3
+	α err prob	=	0.05
+	Total sample size	=	2
+	Df	=	1
+Output:	Noncentrality parameter λ	=	0.1800000
+	Critical χ²	=	3.8414588
+	Power (1-β err prob)	=	0.0708635
+
+[32] -- Monday, October 26, 2026 -- 20:55:35
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	Post hoc: Compute achieved power 
+Input:	Effect size w	=	0
+	α err prob	=	0.05
+	Total sample size	=	0.95
+	Df	=	5
+Output:	Noncentrality parameter λ	=	0
+	Critical χ²	=	11.0704977
+	Power (1-β err prob)	=	0.0500000
+
+[33] -- Monday, October 26, 2026 -- 21:04:10
+χ² tests - Goodness-of-fit tests: Contingency tables
+Analysis:	A priori: Compute required sample size 
+Input:	Effect size w	=	0.3
+	α err prob	=	0.05
+	Power (1-β err prob)	=	0.95
+	Df	=	2.5
+Output:	Noncentrality parameter λ	=	16.3800000
+	Critical χ²	=	6.9280761
+	Total sample size	=	182
+	Actual power	=	0.9502356

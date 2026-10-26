@@ -1,6 +1,6 @@
 """K4 (chi2-contingency) kâhin planını üretir: K4_plan.csv, K4_gui_results.csv ve K4_GIRIS_LISTESI.md.
 Hiçbir güç hesabı yapmaz; yalnızca G*Power 3.1.9.7 arayüzüne elle girilecek değerleri tek kaynaktan listeler.
-Kullanım: python oracle/make_k4_plan.py  (dosyalar bu betiğin yanına yazılır; K4_gui_results.csv varsa korunur)."""
+Kullanım: python oracle/make_k4_plan.py  (dosyalar bu betiğin yanına yazılır; K4_gui_results.csv varsa korunur, yalnızca eksik vektörler sona eklenir)."""
 import collections
 import csv
 import os
@@ -56,11 +56,17 @@ V = [
     (A, "0.3", "0.05", "0.95", "", "2.5", "gecersiz", "df ondalık: yuvarlıyor mu, reddediyor mu?"),
     (A, "0.3", "0.05", "1", "", "5", "gecersiz", "power=1: alan reddediyor mu, mesaj ne?"),
     (P, "0.3", "0", "", "100", "5", "gecersiz", "alpha=0: alan reddediyor mu, mesaj ne?"),
+    # f) Geçersiz girdiler — mod tutarlılığı (protokol kaydı [32] gözleminden sonra eklendi)
+    (P, "0", "0.05", "", "100", "1", "gecersiz-mod-tutarliligi", "w=0 post-hoc'ta: a-priori'de reddediliyordu, post-hoc ne yapıyor?"),
+    (P, "0.3", "0.05", "", "1", "1", "gecersiz-mod-tutarliligi", "n_total=1: sözleşmedeki ≥2 sınırının altında"),
+    (P, "0.3", "0.05", "", "50.5", "1", "gecersiz-mod-tutarliligi", "n_total ondalık: yuvarlıyor mu, reddediyor mu?"),
+    (P, "-0.3", "0.05", "", "100", "1", "gecersiz-mod-tutarliligi", "w negatif post-hoc'ta: a-priori ile aynı mesaj mı?"),
+    (P, "0.3", "0.05", "", "50.2", "1", "gecersiz-mod-tutarliligi", "plan dışı ek; N=50.5'te görülen yuvarlamanın kuralını ayırt etmek"),
 ]
 
 cols = ["id", "mode", "w", "alpha", "power", "n_total", "df", "kategori", "amac"]
 rows = [dict(zip(cols, (f"K4-{i:03d}",) + v)) for i, v in enumerate(V, 1)]
-res_cols = ["g_ncp", "g_critical_chi2", "g_n_total", "g_actual_power", "g_power", "g_tepki", "screenshot"]
+res_cols = ["g_ncp", "g_critical_chi2", "g_n_total", "g_actual_power", "g_power", "n_kullanilan", "g_tepki", "screenshot"]
 
 keys = [tuple(r[c] for c in cols[1:7]) for r in rows]
 assert len(set(keys)) == len(keys), "aynı girdi iki kez var"
@@ -74,12 +80,24 @@ def write_csv(path, header, data):
         w.writerows(data)
 
 write_csv(os.path.join(out, "K4_plan.csv"), cols, rows)
-# Sonuç dosyası elle doldurulur; varsa asla üzerine yazılmaz
+# Sonuç dosyası elle doldurulur; varsa asla üzerine yazılmaz, yalnızca eksik vektörler sona eklenir
 results_path = os.path.join(out, "K4_gui_results.csv")
+blank = lambda r: {**r, **{c: "" for c in res_cols}}
 if os.path.exists(results_path):
     print("K4_gui_results.csv zaten var, korunuyor")
+    with open(results_path, encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f)
+        existing_header = reader.fieldnames
+        existing = {r["id"] for r in reader}
+    new = [blank(r) for r in rows if r["id"] not in existing]
+    if new:
+        # Dosyadaki mevcut başlığa göre yaz; sütun sırası asla kaymaz
+        with open(results_path, "a", encoding="utf-8", newline="") as f:
+            csv.DictWriter(f, fieldnames=existing_header, restval="", extrasaction="ignore",
+                           lineterminator="\n").writerows(new)
+        print(f"{len(new)} yeni boş satır sona eklendi:", ", ".join(r["id"] for r in new))
 else:
-    write_csv(results_path, cols + res_cols, [{**r, **{c: "" for c in res_cols}} for r in rows])
+    write_csv(results_path, cols + res_cols, [blank(r) for r in rows])
 
 # Kalibrasyon beklenenleri: CONTRACT.md Bölüm 9'dan birebir
 EXPECTED = {
@@ -94,7 +112,14 @@ SECTIONS = [
     ("tipik-post-hoc", "C. Tipik post-hoc ({})"),
     ("sinir", "D. Sınır değerler ({}) — tabandan yalnızca **kalın** değer farklı"),
     ("gecersiz", "E. Geçersiz girdiler ({}) — tepkiyi birebir yaz"),
+    ("gecersiz-mod-tutarliligi", "F. Geçersiz girdiler — mod tutarlılığı ({}) — tepkiyi birebir yaz"),
 ]
+# Hata diyaloğu girdi alanlarını örttüğü için ekran görüntüsü yeniden alınacak vektörler
+RECAPTURE = {
+    "K4-031": "diyalog w ve α alanlarını örtüyor",
+    "K4-033": "diyalog w alanını örtüyor (K4-034'ten ayırt edilemiyor)",
+    "K4-034": "diyalog w alanını örtüyor (K4-033'ten ayırt edilemiyor)",
+}
 BASE = {A: {"w": "0.3", "alpha": "0.05", "power": "0.80", "df": "1"},
         P: {"w": "0.3", "alpha": "0.05", "n_total": "100", "df": "1"}}
 
@@ -128,6 +153,18 @@ for key, title in SECTIONS:
         if r["kategori"] == key:
             md.append(f"| {r['id']} | {MODE_LABEL[r['mode']]} | {inputs(r)} | {EXPECTED.get((key, r['mode']), '—')} | ☐ |")
     md.append("")
+md += [
+    "## Yeniden çekilecekler",
+    "",
+    "Hata diyaloğunu girdi alanlarını örtmeyecek bir yere sürükleyip ekran görüntüsünü yeniden al; dosyayı aynı adla `oracle/screenshots/<id>.png` üzerine kaydet.",
+    "",
+    "| id | Mod | Girilecek değerler | Neden | ☐ |",
+    "|---|---|---|---|---|",
+]
+for r in rows:
+    if r["id"] in RECAPTURE:
+        md.append(f"| {r['id']} | {MODE_LABEL[r['mode']]} | {inputs(r)} | {RECAPTURE[r['id']]} | ☐ |")
+md.append("")
 with open(os.path.join(out, "K4_GIRIS_LISTESI.md"), "w", encoding="utf-8", newline="\n") as f:
     f.write("\n".join(md))
 print("vektör:", len(rows), dict(counts))
